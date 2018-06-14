@@ -119,6 +119,9 @@ a{
         <li class="dropdown">
 		  <a href="index.html" onclick="logout()">&nbsp;&nbsp;Logout</a>
         </li>
+		<li class="dropdown">
+		  <a href="#" onclick="switchclass()" >&nbsp;&nbsp;Switch Class</a>
+        </li>
         <!----<li><a href="#">&nbsp;&nbsp;View Agents </a></li>---->
       </ul>
       
@@ -179,6 +182,9 @@ function logout(){
 	localStorage["db"] = "";
 	localStorage.clear();
 }
+ function switchclass(){
+	document.location='resolveCID.html?cid=' + localStorage["cidlist"];	
+ }
 </script>
 
 </html>

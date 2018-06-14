@@ -193,6 +193,7 @@ function setdata(data){
 	if(data!=null ){
 		localStorage["mname"] = data["mname"];// Mentor Name
 		localStorage["mid"] = data["mid"];// Mentor Id
+		localStorage["cidlist"] = data["cid"];
 		// Go to resolve CID page to give mentors a choice, if they are eligible to access more t han one classes
 		document.location='resolveCID.html?cid=' + data["cid"];	
 		}
