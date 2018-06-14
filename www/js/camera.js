@@ -56,14 +56,14 @@ var base_url = "http://greyboxerp.com/studentapp/";
       // console.log(imageURI);
       // Get image handle
       
-      var largeImage = document.getElementById('largeImage');
+      var largeImage = document.getElementById('smallImage');
       // Unhide image elements
       //
       largeImage.style.display = 'block';
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      largeImage.src = imageURI;
+      largeImage.src = "data:image/jpeg;base64," + imageURI;
 	  localStorage.setItem("imageURI", imageURI);
 	
     }
